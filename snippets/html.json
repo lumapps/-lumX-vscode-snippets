@@ -1,0 +1,200 @@
+{
+    /*
+        Elements
+    */
+
+    // Button
+    "{lumX} lx-button": {
+        "prefix": "lxbutton",
+        "body": [
+            "<lx-button lx-color=\"$1\"",
+            "           lx-size=\"$2\"",
+            "           lx-type=\"$3\">",
+            "</lx-button>"
+        ]
+    },
+
+    // Checkbox
+    "{lumX} lx-checkbox": {
+        "prefix": "lxcheckbox",
+        "body": [
+            "<lx-checkbox lx-color=\"$1\"",
+            "             name=\"$2\"",
+            "             ng-model=\"$3\">",
+            "   <lx-checkbox-label></lx-checkbox-label>",
+            "   <lx-checkbox-help></lx-checkbox-help>",
+            "</lx-checkbox>"
+        ]
+    },
+
+    // Date picker
+    "{lumX} lx-date-picker": {
+        "prefix": "lxdatepicker",
+        "body": [
+            "<lx-date-picker lx-input-format=\"$1\"",
+            "                lx-locale=\"$2\"",
+            "                ng-model=\"$3\">",
+            "</lx-date-picker>"
+        ]
+    },
+
+    // Dialog
+    "{lumX} lx-dialog": {
+        "prefix": "lxdialog",
+        "body": [
+            "<lx-dialog lx-auto-close=\"$1\"",
+            "           lx-escape-close=\"$2\">",
+            "   <lx-dialog-header>$3</lx-dialog-header>",
+            "   <lx-dialog-content>$4</lx-dialog-content>",
+            "   <lx-dialog-footer>$5</lx-dialog-footer>",
+            "</lx-dialog>"
+        ]
+    },
+
+    // Dialog
+    "{lumX} lx-dropdown": {
+        "prefix": "lxdropdown",
+        "body": [
+            "<lx-dropdown lx-position=\"$1\"",
+            "             lx-over-toggle=\"$2\">",
+            "   <lx-dropdown-toggle>$3</lx-dropdown-toggle>",
+            "   <lx-dropdown-menu>$4</lx-dropdown-menu>",
+            "</lx-dropdown>"
+        ]
+    },
+
+    // Floating Action Button
+    "{lumX} lx-fab": {
+        "prefix": "lxfab",
+        "body": [
+            "<lx-fab lx-direction=\"down\">",
+            "   <lx-fab-trigger>$1</lx-fab-trigger>",
+            "   <lx-fab-actions>$2</lx-fab-actions>",
+            "</lx-fab>"
+        ]
+    },
+
+    // File input
+    "{lumX} lx-file-input": {
+        "prefix": "lxfileinput",
+        "body": [
+            "<lx-file-input lx-label=\"$1\"",
+            "               lx-callback=\"$2\">",
+            "</lx-file-input>"
+        ]
+    },
+
+    // Icon
+    "{lumX} lx-icon": {
+        "prefix": "lxicon",
+        "body": [
+            "<lx-icon lx-color=\"$1\"",
+            "         lx-id=\"$2\"",
+            "         lx-size=\"$3\"",
+            "         lx-type=\"$4\">",
+            "</lx-icon>"
+        ]
+    },
+
+    // Progress
+    "{lumX} lx-progress": {
+        "prefix": "lxprogress",
+        "body": [
+            "<lx-progress lx-color=\"$1\"",
+            "             lx-type=\"$2\">",
+            "</lx-progress>"
+        ]
+    },
+
+    // Radio button
+    "{lumX} lx-radio-button": {
+        "prefix": "lxradiobutton",
+        "body": [
+            "<lx-radio-button lx-position=\"$1\"",
+            "                 lx-over-toggle=\"$2\"",
+            "                 ng-model=\"$3\"",
+            "                 value=\"$4\">",
+            "   <lx-radio-button-label>$5</lx-radio-button-label>",
+            "   <lx-radio-button-help>$6</lx-radio-button-help>",
+            "</lx-radio-button>"
+        ]
+    },
+
+    // Search filter
+    "{lumX} lx-search-filter": {
+        "prefix": "lxsearchfilter",
+        "body": [
+            "<lx-search-filter lx-color=\"$1\"",
+            "                  lx-close=\"${2:true}\">",
+            "   <input type=\"text\" ng-model=\"$3\">",
+            "</lx-search-filter>"
+        ]
+    },
+
+    // Select
+    "{lumX} lx-select": {
+        "prefix": "lxselect",
+        "body": [
+            "<lx-select lx-allow-clear=\"$1\"",
+            "           lx-choices=\"$2\"",
+            "           lx-display-filter=\"$3\"",
+            "           lx-label=\"$4\"",
+            "           ng-model=\"$5\">",
+            "   <lx-select-selected>",
+            "       {{ $selected.name }} - {{ $selected.age }}",
+            "   </lx-select-selected>",
+            "",
+            "   <lx-select-choices>",
+            "       {{ $choice.email }}",
+            "   </lx-select-choices>",
+            "</lx-select>"
+        ]
+    },
+
+    // Switch
+    "{lumX} lx-switch": {
+        "prefix": "lxswitch",
+        "body": [
+            "<lx-switch ng-model=\"$1\">",
+            "   <lx-switch-label>$2</lx-switch-label>",
+            "   <lx-switch-help>$3</lx-switch-help>",
+            "</lx-switch>"
+        ]
+    },
+
+    // Tabs
+    "{lumX} lx-tabs": {
+        "prefix": "lxtabs",
+        "body": [
+            "<lx-tabs lx-active-tab=\"$1\">",
+            "   <lx-tab lx-label=\"$2\">$3</lx-tab>",
+            "   <lx-tab lx-label=\"$4\">$5</lx-tab>",
+            "   <lx-tab lx-label=\"$6\">$7</lx-tab>",
+            "</lx-tabs>"
+        ]
+    },
+
+    // Text field
+    "{lumX} lx-text-field": {
+        "prefix": "lxtextfield",
+        "body": [
+            "<lx-text-field lx-allow-clear=\"true\"",
+            "               lx-label=\"$1\">",
+            "   <input type=\"text\" ng-model=\"\">",
+            "</lx-text-field>"
+        ]
+    },
+
+    /*
+        Attributes
+    */
+
+    // Tooltip
+    "{lumX} lx-tooltip": {
+        "prefix": "lxtooltip",
+        "body": [
+            "lx-tooltip=\"$1\" lx-tooltip-position=\"${2:bottom}\" "
+        ]
+    }
+
+}

@@ -1,0 +1,27 @@
+{
+    "name": "lumX-vscode-snippets",
+    "displayName": "lumX VSCode Snippets",
+    "publisher": "LumApps",
+    "description": "Visual Studio Code snippets for the lumX framework",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lumapps/lumX-vscode-snippets/issues"
+    },
+    "homepage": "https://github.com/lumapps/lumX-vscode-snippets/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lumapps/lumX-vscode-snippets.git"
+    },
+    "version": "0.1.0",
+    "engines": { "vscode": "0.10.x" },
+    "categories": ["Snippets"],
+    "keywords": ["lumX", "snippets", "angular"],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            }
+        ]
+    }
+}

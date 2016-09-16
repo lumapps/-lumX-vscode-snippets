@@ -1,7 +1,7 @@
 {
     "name": "lumX-vscode-snippets",
     "displayName": "lumX VSCode Snippets",
-    "publisher": "LumApps",
+    "publisher": "lumapps",
     "description": "Visual Studio Code snippets for the lumX framework",
     "license": "MIT",
     "bugs": {

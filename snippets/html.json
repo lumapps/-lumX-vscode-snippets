@@ -7,9 +7,9 @@
     "{lumX} lx-button": {
         "prefix": "lxbutton",
         "body": [
-            "<lx-button lx-color=\"$1\"",
-            "           lx-size=\"$2\"",
-            "           lx-type=\"$3\">",
+            "<lx-button lx-color=\"${1:primary}\"",
+            "           lx-size=\"${2:m}\"",
+            "           lx-type=\"${3:raised}\">",
             "</lx-button>"
         ]
     },
@@ -18,11 +18,11 @@
     "{lumX} lx-checkbox": {
         "prefix": "lxcheckbox",
         "body": [
-            "<lx-checkbox lx-color=\"$1\"",
-            "             name=\"$2\"",
+            "<lx-checkbox lx-color=\"${1:accent}\"",
+            "             name=\"${2:checkbox-name}\"",
             "             ng-model=\"$3\">",
-            "   <lx-checkbox-label></lx-checkbox-label>",
-            "   <lx-checkbox-help></lx-checkbox-help>",
+            "    <lx-checkbox-label>${4:Checkbox label text}</lx-checkbox-label>",
+            "    <lx-checkbox-help>${5:Checkbox help text}</lx-checkbox-help>",
             "</lx-checkbox>"
         ]
     },
@@ -31,9 +31,12 @@
     "{lumX} lx-date-picker": {
         "prefix": "lxdatepicker",
         "body": [
-            "<lx-date-picker lx-input-format=\"$1\"",
-            "                lx-locale=\"$2\"",
-            "                ng-model=\"$3\">",
+            "<lx-date-picker lx-auto-close=\"${1:true}\"",
+            "                lx-color=\"${2:primary}\"",
+            "                lx-escape-close=\"${3:true}\"",
+            "                lx-input-format=\"$4\"",
+            "                lx-locale=\"$5\"",
+            "                ng-model=\"$6\">",
             "</lx-date-picker>"
         ]
     },
@@ -42,11 +45,11 @@
     "{lumX} lx-dialog": {
         "prefix": "lxdialog",
         "body": [
-            "<lx-dialog lx-auto-close=\"$1\"",
-            "           lx-escape-close=\"$2\">",
-            "   <lx-dialog-header>$3</lx-dialog-header>",
-            "   <lx-dialog-content>$4</lx-dialog-content>",
-            "   <lx-dialog-footer>$5</lx-dialog-footer>",
+            "<lx-dialog lx-auto-close=\"${1:true}\"",
+            "           lx-escape-close=\"${2:true}\">",
+            "    <lx-dialog-header>${3:Dialog header text}</lx-dialog-header>",
+            "    <lx-dialog-content>${4:Dialog content text}</lx-dialog-content>",
+            "    <lx-dialog-footer>${5:Dialog footer text}</lx-dialog-footer>",
             "</lx-dialog>"
         ]
     },
@@ -55,10 +58,17 @@
     "{lumX} lx-dropdown": {
         "prefix": "lxdropdown",
         "body": [
-            "<lx-dropdown lx-position=\"$1\"",
-            "             lx-over-toggle=\"$2\">",
-            "   <lx-dropdown-toggle>$3</lx-dropdown-toggle>",
-            "   <lx-dropdown-menu>$4</lx-dropdown-menu>",
+            "<lx-dropdown lx-effect=\"${1:expand}\"",
+            "             lx-escape-close=\"${2:true}\"",
+            "             lx-hover=\"${3:false}\"",
+            "             lx-over-toggle=\"${4:false}\"",
+            "             lx-position=\"${5:left}\">",
+            "    <lx-dropdown-toggle>",
+            "        ${6:<lx-button>Dropdown menu</lx-button>}",
+            "    </lx-dropdown-toggle>",
+            "    <lx-dropdown-menu>",
+            "        ${7:<ul><li><a class=\"dropdown-link\">An action</a></li></ul>}",
+            "    </lx-dropdown-menu>",
             "</lx-dropdown>"
         ]
     },
@@ -67,9 +77,13 @@
     "{lumX} lx-fab": {
         "prefix": "lxfab",
         "body": [
-            "<lx-fab lx-direction=\"down\">",
-            "   <lx-fab-trigger>$1</lx-fab-trigger>",
-            "   <lx-fab-actions>$2</lx-fab-actions>",
+            "<lx-fab lx-direction=\"${1:down}\">",
+            "    <lx-fab-trigger>",
+            "        ${2:<lx-button lx-size=\"xl\" lx-type=\"fab\"><i class=\"mdi mdi-plus\"></i></lx-button>}",
+            "    </lx-fab-trigger>",
+            "    <lx-fab-actions>",
+            "        ${3:<lx-button lx-size=\"l\" lx-type=\"fab\"><i class=\"mdi mdi-delete\"></i></lx-button>}",
+            "    </lx-fab-actions>",
             "</lx-fab>"
         ]
     },
@@ -78,9 +92,7 @@
     "{lumX} lx-file-input": {
         "prefix": "lxfileinput",
         "body": [
-            "<lx-file-input lx-label=\"$1\"",
-            "               lx-callback=\"$2\">",
-            "</lx-file-input>"
+            "<lx-file-input lx-label=\"${1:Browse}\"></lx-file-input>"
         ]
     },
 
@@ -88,11 +100,7 @@
     "{lumX} lx-icon": {
         "prefix": "lxicon",
         "body": [
-            "<lx-icon lx-color=\"$1\"",
-            "         lx-id=\"$2\"",
-            "         lx-size=\"$3\"",
-            "         lx-type=\"$4\">",
-            "</lx-icon>"
+            "<lx-icon lx-id=\"${1:pencil}\"></lx-icon>"
         ]
     },
 
@@ -100,8 +108,9 @@
     "{lumX} lx-progress": {
         "prefix": "lxprogress",
         "body": [
-            "<lx-progress lx-color=\"$1\"",
-            "             lx-type=\"$2\">",
+            "<lx-progress lx-color=\"${1:primary}\"",
+            "             lx-diameter=\"${2:100}\"",
+            "             lx-type=\"${3:circular}\">",
             "</lx-progress>"
         ]
     },
@@ -110,12 +119,12 @@
     "{lumX} lx-radio-button": {
         "prefix": "lxradiobutton",
         "body": [
-            "<lx-radio-button lx-position=\"$1\"",
-            "                 lx-over-toggle=\"$2\"",
+            "<lx-radio-button lx-color=\"${1:accent}\"",
+            "                 name=\"${2:radio-button-name}\"",
             "                 ng-model=\"$3\"",
             "                 value=\"$4\">",
-            "   <lx-radio-button-label>$5</lx-radio-button-label>",
-            "   <lx-radio-button-help>$6</lx-radio-button-help>",
+            "    <lx-radio-button-label>${5:Radio button label text}</lx-radio-button-label>",
+            "    <lx-radio-button-help>${6:Radio button help text}</lx-radio-button-help>",
             "</lx-radio-button>"
         ]
     },
@@ -124,9 +133,10 @@
     "{lumX} lx-search-filter": {
         "prefix": "lxsearchfilter",
         "body": [
-            "<lx-search-filter lx-color=\"$1\"",
-            "                  lx-close=\"${2:true}\">",
-            "   <input type=\"text\" ng-model=\"$3\">",
+            "<lx-search-filter lx-closed=\"${1:false}\"",
+            "                  lx-color=\"${2:black}\"",
+            "                  lx-width=\"${3:240}\">",
+            "    <input type=\"text\" ng-model=\"$4\">",
             "</lx-search-filter>"
         ]
     },
@@ -135,18 +145,24 @@
     "{lumX} lx-select": {
         "prefix": "lxselect",
         "body": [
-            "<lx-select lx-allow-clear=\"$1\"",
-            "           lx-choices=\"$2\"",
-            "           lx-display-filter=\"$3\"",
-            "           lx-label=\"$4\"",
-            "           ng-model=\"$5\">",
-            "   <lx-select-selected>",
-            "       {{ $selected.name }} - {{ $selected.age }}",
-            "   </lx-select-selected>",
+            "<lx-select lx-allow-clear=\"${1:false}\"",
+            "           lx-choices=\"${2:choices}\"",
+            "           lx-choices-custom-style=\"${3:false}\"",
+            "           lx-display-filter=\"${4:false}\"",
+            "           lx-fixed-label=\"${5:false}\"",
+            "           lx-helper=\"${6:false}\"",
+            "           lx-label=\"${7:Select label text}\"",
+            "           lx-loading=\"${8:false}\"",
+            "           lx-multiple=${9:false}",
+            "           lx-theme=\"${10:light}\"",
+            "           ng-model=\"$11\">",
+            "    <lx-select-selected>",
+            "        {{ $selected.name }}",
+            "    </lx-select-selected>",
             "",
-            "   <lx-select-choices>",
-            "       {{ $choice.email }}",
-            "   </lx-select-choices>",
+            "    <lx-select-choices>",
+            "        {{ $choice.name }}",
+            "    </lx-select-choices>",
             "</lx-select>"
         ]
     },
@@ -155,9 +171,11 @@
     "{lumX} lx-switch": {
         "prefix": "lxswitch",
         "body": [
-            "<lx-switch ng-model=\"$1\">",
-            "   <lx-switch-label>$2</lx-switch-label>",
-            "   <lx-switch-help>$3</lx-switch-help>",
+            "<lx-switch lx-color=\"${1:accent}\"",
+            "           name=\"${2:switch-name}\"",
+            "           ng-model=\"$3\">",
+            "    <lx-switch-label>${4:Switch label text}</lx-switch-label>",
+            "    <lx-switch-help>${5:Switch label help text}</lx-switch-help>",
             "</lx-switch>"
         ]
     },
@@ -166,10 +184,14 @@
     "{lumX} lx-tabs": {
         "prefix": "lxtabs",
         "body": [
-            "<lx-tabs lx-active-tab=\"$1\">",
-            "   <lx-tab lx-label=\"$2\">$3</lx-tab>",
-            "   <lx-tab lx-label=\"$4\">$5</lx-tab>",
-            "   <lx-tab lx-label=\"$6\">$7</lx-tab>",
+            "<lx-tabs lx-layout=\"${1:full}\"",
+            "         lx-theme=\"${2:light}\"",
+            "         lx-color=\"${3:primary}\"",
+            "         lx-indicator=\"${4:accent}\"",
+            "         lx-active-tab=\"${5:0}\">",
+            "    <lx-tab lx-label=\"${6:First tab label}\">${7:First tab content}</lx-tab>",
+            "    <lx-tab lx-label=\"${8:Second tab label}\">${9:Second tab content}</lx-tab>",
+            "    <lx-tab lx-label=\"${10:Third tab label}\">${11:Third tab content}</lx-tab>",
             "</lx-tabs>"
         ]
     },
@@ -178,9 +200,11 @@
     "{lumX} lx-text-field": {
         "prefix": "lxtextfield",
         "body": [
-            "<lx-text-field lx-allow-clear=\"true\"",
-            "               lx-label=\"$1\">",
-            "   <input type=\"text\" ng-model=\"\">",
+            "<lx-text-field lx-allow-clear=\"${1:false}\"",
+            "               lx-fixed-label=\"${2:false}\"",
+            "               lx-label=\"${3:Text field label}\"",
+            "               lx-theme=\"${4:light}\">",
+            "    <input type=\"text\" ng-model=\"$5\">",
             "</lx-text-field>"
         ]
     },
@@ -193,7 +217,7 @@
     "{lumX} lx-tooltip": {
         "prefix": "lxtooltip",
         "body": [
-            "lx-tooltip=\"$1\" lx-tooltip-position=\"${2:bottom}\" "
+            "lx-tooltip=\"${1:Tooltip content}\" lx-tooltip-position=\"${2:top}\" "
         ]
     }
 

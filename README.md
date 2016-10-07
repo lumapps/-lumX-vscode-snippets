@@ -28,5 +28,5 @@ For more details about extra attributes etc..., checkout the [full documentation
 ## Todo:
 
 - [] Presentation tips https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_marketplace-presentation-tips
-- [] Set default values for directives attributes in the snippets based on the documentation
+- [x] Set default values for directives attributes in the snippets based on the documentation
 - [] Attributes - Go through all of the lx directives

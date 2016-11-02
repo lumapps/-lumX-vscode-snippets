@@ -1,3 +1,6 @@
+# 0.2.2
+- Release mistake... :(
+
 # 0.2.1
 - Add lumX logo
 

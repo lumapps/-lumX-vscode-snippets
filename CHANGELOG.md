@@ -1,3 +1,6 @@
+# 0.2.1
+- Add lumX logo
+
 # 0.2.0
 - Add default values for all supported directives.
 - General cleanup & basic documentation.

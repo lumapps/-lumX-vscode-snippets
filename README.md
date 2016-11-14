@@ -6,6 +6,7 @@ For more details about extra attributes etc..., checkout the [full documentation
 
 - Button: lxbutton
 - Checkbox: lxcheckbox
+- Data table: lxdatatable
 - Date picker: lxdatepicker
 - Dialog: lxdialog
 - Dropdown: lxdropdown
@@ -27,6 +28,6 @@ For more details about extra attributes etc..., checkout the [full documentation
 
 ## Todo:
 
-- [] Presentation tips https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_marketplace-presentation-tips
+- [x] Presentation tips https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_marketplace-presentation-tips
 - [x] Set default values for directives attributes in the snippets based on the documentation
-- [] Attributes - Go through all of the lx directives
+- [ ] Attributes - Go through all of the lx directives

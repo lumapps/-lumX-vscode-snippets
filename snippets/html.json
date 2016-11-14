@@ -27,6 +27,20 @@
         ]
     },
 
+    // Data table
+    "{lumX} lx-data-table": {
+        "prefix": "lxdatatable",
+        "body": [
+            "<lx-data-table id=\"${1:data-table-id}\"",
+            "               lx-border=\"${2:true}\"",
+            "               lx-selectable=\"${3:false}\"",
+            "               lx-thead=\"${4:vm.dataTableThead}\"",
+            "               lx-tbody=\"${5:vm.dataTableTbody}\"",
+            "               lx-thumbnail=\"${6:false}\">",
+            "</lx-data-table>"
+        ]
+    },
+
     // Date picker
     "{lumX} lx-date-picker": {
         "prefix": "lxdatepicker",

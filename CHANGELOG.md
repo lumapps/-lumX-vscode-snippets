@@ -1,3 +1,6 @@
+# 0.4.0
+- Add support for the following lx-select attributes: lx-allow-new-value, lx-autocomplete, lx-custom-style, lx-error, lx-valid, lx-view-mode
+
 # 0.3.0
 - Add support for the new data table directive.
 

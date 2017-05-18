@@ -72,16 +72,17 @@
     "{lumX} lx-dropdown": {
         "prefix": "lxdropdown",
         "body": [
-            "<lx-dropdown lx-effect=\"${1:expand}\"",
-            "             lx-escape-close=\"${2:true}\"",
-            "             lx-hover=\"${3:false}\"",
-            "             lx-over-toggle=\"${4:false}\"",
-            "             lx-position=\"${5:left}\">",
+            "<lx-dropdown lx-depth=\"${1:1}\"",
+            "             lx-effect=\"${2:expand}\"",
+            "             lx-escape-close=\"${3:true}\"",
+            "             lx-hover=\"${4:false}\"",
+            "             lx-over-toggle=\"${5:false}\"",
+            "             lx-position=\"${6:left}\">",
             "    <lx-dropdown-toggle>",
-            "        ${6:<lx-button>Dropdown menu</lx-button>}",
+            "        ${7:<lx-button>Dropdown menu</lx-button>}",
             "    </lx-dropdown-toggle>",
             "    <lx-dropdown-menu>",
-            "        ${7:<ul><li><a class=\"dropdown-link\">An action</a></li></ul>}",
+            "        ${8:<ul><li><a class=\"dropdown-link\">An action</a></li></ul>}",
             "    </lx-dropdown-menu>",
             "</lx-dropdown>"
         ]

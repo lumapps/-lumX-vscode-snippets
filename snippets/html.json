@@ -151,8 +151,9 @@
         "body": [
             "<lx-search-filter lx-closed=\"${1:false}\"",
             "                  lx-color=\"${2:black}\"",
-            "                  lx-width=\"${3:240}\">",
-            "    <input type=\"text\" ng-model=\"$4\">",
+            "                  lx-theme=\"${3:light}\"",
+            "                  lx-width=\"${4:240}\">",
+            "    <input type=\"text\" ng-model=\"$5\">",
             "</lx-search-filter>"
         ]
     },

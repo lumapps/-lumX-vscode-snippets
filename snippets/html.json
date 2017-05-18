@@ -189,6 +189,32 @@
         ]
     },
 
+    // Stepper
+    "{lumX} lx-stepper": {
+        "prefix": "lxstepper",
+        "body": [
+            "<lx-stepper lx-cancel=\"${1:vm.cancelStepper()}\"",
+            "            lx-complete=\"${2:vm.completeStepper()}\"",
+            "            lx-is-linear=\"${3:true}\"",
+            "            lx-layout=\"${4:horizontal}\">",
+            "    <lx-step lx-is-editable=\"${5:false}\"",
+            "             lx-is-optional=\"${6:false}\"",
+            "             lx-label=\"${7:Step 1}\">",
+            "        <div flex-container=\"row\" flex-align=\"center center\" class=\"bgc-grey-300\" style=\"height: 200px\">",
+            "            <span class=\"fs-title\">${8:Step 1}</span>",
+            "        </div>",
+            "    </lx-step>",
+            "    <lx-step lx-is-editable=\"${9:false}\"",
+            "             lx-is-optional=\"${10:false}\"",
+            "             lx-label=\"${11:Step 2}\">",
+            "        <div flex-container=\"row\" flex-align=\"center center\" class=\"bgc-grey-300\" style=\"height: 200px\">",
+            "            <span class=\"fs-title\">${12:Step 2}</span>",
+            "        </div>",
+            "    </lx-step>",
+            "</lx-stepper>"
+        ]
+    },
+
     // Switch
     "{lumX} lx-switch": {
         "prefix": "lxswitch",

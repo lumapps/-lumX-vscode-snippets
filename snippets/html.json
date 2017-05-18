@@ -19,10 +19,11 @@
         "prefix": "lxcheckbox",
         "body": [
             "<lx-checkbox lx-color=\"${1:accent}\"",
-            "             name=\"${2:checkbox-name}\"",
-            "             ng-model=\"$3\">",
-            "    <lx-checkbox-label>${4:Checkbox label text}</lx-checkbox-label>",
-            "    <lx-checkbox-help>${5:Checkbox help text}</lx-checkbox-help>",
+            "             lx-theme=\"${2:light}\"",
+            "             name=\"${3:checkbox-name}\"",
+            "             ng-model=\"$4\">",
+            "    <lx-checkbox-label>${5:Checkbox label text}</lx-checkbox-label>",
+            "    <lx-checkbox-help>${6:Checkbox help text}</lx-checkbox-help>",
             "</lx-checkbox>"
         ]
     },

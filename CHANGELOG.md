@@ -1,3 +1,9 @@
+# 0.5.0
+- Add support for the depth attribute on lx-dropdown
+- Add support for the theme attribute on lx-checkbox
+- Add support for the new stepper component
+- Add support for the theme attribute on lx-search-filter
+
 # 0.4.0
 - Add support for the following lx-select attributes: lx-allow-new-value, lx-autocomplete, lx-custom-style, lx-error, lx-valid, lx-view-mode
 

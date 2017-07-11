@@ -108,7 +108,9 @@
     "{lumX} lx-file-input": {
         "prefix": "lxfileinput",
         "body": [
-            "<lx-file-input lx-label=\"${1:Browse}\"></lx-file-input>"
+            "<lx-file-input lx-label=\"${1:Browse}\"",
+            "               lx-accept=\"$2\">",
+            "</lx-file-input>"
         ]
     },
 
@@ -197,19 +199,20 @@
             "<lx-stepper lx-cancel=\"${1:vm.cancelStepper()}\"",
             "            lx-complete=\"${2:vm.completeStepper()}\"",
             "            lx-is-linear=\"${3:true}\"",
-            "            lx-layout=\"${4:horizontal}\">",
-            "    <lx-step lx-is-editable=\"${5:false}\"",
-            "             lx-is-optional=\"${6:false}\"",
-            "             lx-label=\"${7:Step 1}\">",
+            "            lx-layout=\"${4:horizontal}\"",
+            "            lx-show-controls=\"${5:true}\">",
+            "    <lx-step lx-is-editable=\"${6:false}\"",
+            "             lx-is-optional=\"${7:false}\"",
+            "             lx-label=\"${8:Step 1}\">",
             "        <div flex-container=\"row\" flex-align=\"center center\" class=\"bgc-grey-300\" style=\"height: 200px\">",
-            "            <span class=\"fs-title\">${8:Step 1}</span>",
+            "            <span class=\"fs-title\">${9:Step 1}</span>",
             "        </div>",
             "    </lx-step>",
-            "    <lx-step lx-is-editable=\"${9:false}\"",
-            "             lx-is-optional=\"${10:false}\"",
-            "             lx-label=\"${11:Step 2}\">",
+            "    <lx-step lx-is-editable=\"${10:false}\"",
+            "             lx-is-optional=\"${11:false}\"",
+            "             lx-label=\"${12:Step 2}\">",
             "        <div flex-container=\"row\" flex-align=\"center center\" class=\"bgc-grey-300\" style=\"height: 200px\">",
-            "            <span class=\"fs-title\">${12:Step 2}</span>",
+            "            <span class=\"fs-title\">${13:Step 2}</span>",
             "        </div>",
             "    </lx-step>",
             "</lx-stepper>"
@@ -237,10 +240,11 @@
             "         lx-theme=\"${2:light}\"",
             "         lx-color=\"${3:primary}\"",
             "         lx-indicator=\"${4:accent}\"",
-            "         lx-active-tab=\"${5:0}\">",
-            "    <lx-tab lx-label=\"${6:First tab label}\">${7:First tab content}</lx-tab>",
-            "    <lx-tab lx-label=\"${8:Second tab label}\">${9:Second tab content}</lx-tab>",
-            "    <lx-tab lx-label=\"${10:Third tab label}\">${11:Third tab content}</lx-tab>",
+            "         lx-active-tab=\"${5:0}\"",
+            "         lx-position=\"${6:top}\">",
+            "    <lx-tab lx-label=\"${7:First tab label}\">${8:First tab content}</lx-tab>",
+            "    <lx-tab lx-label=\"${9:Second tab label}\">${10:Second tab content}</lx-tab>",
+            "    <lx-tab lx-label=\"${11:Third tab label}\">${12:Third tab content}</lx-tab>",
             "</lx-tabs>"
         ]
     },
@@ -251,9 +255,10 @@
         "body": [
             "<lx-text-field lx-allow-clear=\"${1:false}\"",
             "               lx-fixed-label=\"${2:false}\"",
-            "               lx-label=\"${3:Text field label}\"",
-            "               lx-theme=\"${4:light}\">",
-            "    <input type=\"text\" ng-model=\"$5\">",
+            "               lx-focus=\"${3:false}\"",
+            "               lx-label=\"${4:Text field label}\"",
+            "               lx-theme=\"${5:light}\">",
+            "    <input type=\"text\" ng-model=\"$6\">",
             "</lx-text-field>"
         ]
     },

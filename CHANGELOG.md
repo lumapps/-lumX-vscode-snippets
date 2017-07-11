@@ -1,3 +1,12 @@
+# 0.6.0
+Up to date with LumX 1.5.18.
+
+- Add support for the accept attribute on lx-file-input
+- Add support for the show-controls attribute on lx-stepper
+- Add support for the position attribute on lx-tabs
+- Add support for the focus attribute on lx-text-field
+- Update logo to be PNG (because visualstudio marketplace won't support SVG anymore :cry:)
+
 # 0.5.0
 - Add support for the depth attribute on lx-dropdown
 - Add support for the theme attribute on lx-checkbox

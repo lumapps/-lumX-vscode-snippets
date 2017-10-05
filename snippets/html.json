@@ -138,11 +138,12 @@
         "prefix": "lxradiobutton",
         "body": [
             "<lx-radio-button lx-color=\"${1:accent}\"",
-            "                 name=\"${2:radio-button-name}\"",
-            "                 ng-model=\"$3\"",
-            "                 value=\"$4\">",
-            "    <lx-radio-button-label>${5:Radio button label text}</lx-radio-button-label>",
-            "    <lx-radio-button-help>${6:Radio button help text}</lx-radio-button-help>",
+            "                 lx-theme=\"${2:light}\"",
+            "                 name=\"${3:radio-button-name}\"",
+            "                 ng-model=\"$4\"",
+            "                 value=\"$5\">",
+            "    <lx-radio-button-label>${6:Radio button label text}</lx-radio-button-label>",
+            "    <lx-radio-button-help>${7:Radio button help text}</lx-radio-button-help>",
             "</lx-radio-button>"
         ]
     },

@@ -225,10 +225,11 @@
         "prefix": "lxswitch",
         "body": [
             "<lx-switch lx-color=\"${1:accent}\"",
-            "           name=\"${2:switch-name}\"",
-            "           ng-model=\"$3\">",
-            "    <lx-switch-label>${4:Switch label text}</lx-switch-label>",
-            "    <lx-switch-help>${5:Switch label help text}</lx-switch-help>",
+            "           lx-theme=\"${2:light}\"",
+            "           name=\"${3:switch-name}\"",
+            "           ng-model=\"$4\">",
+            "    <lx-switch-label>${5:Switch label text}</lx-switch-label>",
+            "    <lx-switch-help>${6:Switch label help text}</lx-switch-help>",
             "</lx-switch>"
         ]
     },

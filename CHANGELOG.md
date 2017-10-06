@@ -1,5 +1,13 @@
+# 0.6.1
+Up to date with LumX 1.6.2
+
+- Add support for the isValid attribute on lx-stepper
+- Remove support for the lx-depth attribute on lx-dropdown
+- Add support for the lx-theme attribute on lx-radio-button
+- Add support for the lx-theme attribute on lx-switch
+
 # 0.6.0
-Up to date with LumX 1.5.18.
+Up to date with LumX 1.5.18
 
 - Add support for the accept attribute on lx-file-input
 - Add support for the show-controls attribute on lx-stepper

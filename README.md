@@ -17,6 +17,7 @@ For more details about extra attributes etc..., checkout the [full documentation
 - Radio button: lxradiobutton
 - Search filter: lxsearchfilter
 - Select: lxselect
+- Stepper: lxstepper
 - Switch: lxswitch
 - Tabs: lxtabs
 - Text field: lxtextfield
@@ -24,10 +25,3 @@ For more details about extra attributes etc..., checkout the [full documentation
 ### Supported Attributes
 
 - Tooltip: lxtooltip
-
-
-## Todo:
-
-- [x] Presentation tips https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_marketplace-presentation-tips
-- [x] Set default values for directives attributes in the snippets based on the documentation
-- [ ] Attributes - Go through all of the lx directives

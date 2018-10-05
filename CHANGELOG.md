@@ -1,3 +1,9 @@
+# 0.6.3
+Up to date with LumX 1.7.36
+
+- Add support for the lx-trigger-on-click attribute on lx-fab
+- Add support for the lx-max attribute on lx-select
+
 # 0.6.1
 Up to date with LumX 1.6.2
 
